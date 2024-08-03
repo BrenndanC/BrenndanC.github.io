@@ -1,0 +1,77 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+<head>
+<title>Welcome!</title>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link id="styles" rel="stylesheet" href="../styles/styleSpace.css">
+</head>
+
+<body>
+
+  <div class="my-name">
+    <h1>Brenndan</h1>
+    <h2>Croteau</h2>
+  </div>
+
+  <div class="attendance">
+    <h1 class="attendance-header">Attendance Collection</h1>
+    <p class="attendance-text">
+      This project was the first application I developed. It is given a file of attendance logs, and will return the names of students 
+      along with any relevant information asked for. Features include but are not limited to:
+      <li class="attendance-bullet">List of late students</li>
+      <li class="attendance-bullet">Attendance for a specific student</li>
+      <li class="attendance-bullet">List of students absent</li>
+      <li class="attendance-bullet">List of all student entry times</li>
+    </p>
+    <p class="attendance-text">
+      For the application to work, the text file provided has to be within a certain format. Should the file deviate from this format, the 
+      application will fail to work. <a href="https://www.youtube.com/watch?v=NLGMzMnmcXk">Here is a video</a> that demonstrates the capabilities
+      of the application as well as how to use it.
+    </p>
+  </div>
+
+  <img id="attendance-collection" src="../images/attendanceCollection.png">
+
+  <label class="hamburger-menu">
+    <input type="checkbox">
+  </label>
+
+  <aside class="sidebar">
+    <nav>
+      <ul class="menu-items">
+        <li><a href="/" class="btn">Home</a></li>
+        <li><a href="/portfolio/" class="btn">Portfolio</a></li>
+        <li><a href="/qualifications/" class="btn">Qualifications</a></li>
+        <li><a href="/service/" class="btn">Service</a></li>
+      </ul>
+    </nav>
+      <label class="switch" id="theme-switch" >
+        <input id="style-box" type="checkbox" onchange="doalert(this)">
+        <span class="slider round"></span>
+      </label>
+      <aside id="sky">
+        <p>Sky</p>
+      </aside>
+      <aside id="nature">
+        <p>Nature</p>
+      </aside>
+
+    <nav>
+      <a href="https://www.instagram.com/brenndan.cro03/?hl=en"><img id="instagram" src="../logos/instagram.png"></a>
+      <a href="https://leetcode.com/brenndancroteau/"><img id="leetcode" src="../logos/leetcode.png"></a>
+      <a href="https://www.facebook.com/brenndan.croteau/"><img id="facebook" src="../logos/facebook.png"></a>
+      <a href="https://www.linkedin.com/in/brenndan-croteau/"><img id="linkedin" src="../logos/linkedin.png"></a>
+      <a href="https://github.com/brenndancroteau"><img id="github" src="../logos/github.png"></a>
+    </nav>
+
+  </aside>
+
+  <script src="../script.js"></script>
+
+  <video autoplay muted loop id="backgroundVideo" type="mp4">
+    <source id="vidSource" src="../mp4/sky.mp4">
+  </video>
+
+</body>
+
+</html>
