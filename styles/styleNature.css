@@ -1,0 +1,558 @@
+.hamburger-menu {
+    position: fixed;
+    opacity: 100%;
+    top: 5000px;
+}
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/*  THIS SECTION IS FOR THE NAVIGATION BAR  */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+
+.sidebar {
+    position: fixed;
+    top: -3px;
+    left: 50%;
+    transform: translate(-50%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: transparent;
+    padding: 10px 20px;
+    z-index: 2;
+    width: 98%;
+    height: 50px;
+}
+  
+.menu-items {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.menu-items li {
+    margin-right: 15px;
+}
+
+.menu-items a {
+    text-decoration: none;
+    color: blanchedalmond;
+    font-size: 20px;
+}
+
+.menu-items a:hover {
+    color:burlywood;
+    transition: color 0.3s ease-in-out;
+}
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/* THIS SECTION IS FOR THE BACKGROUND VIDEO */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+
+#backgroundVideo {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/*      THIS SECTION IS FOR THE SLIDER      */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+
+#sky {
+    position: fixed;
+    top: 8px;
+    right: 150px;
+    font-weight: 500;
+    color: blanchedalmond;
+}
+
+#nature {
+    position: fixed;
+    top: 8px;
+    right: 30px;
+    font-weight: 500;
+    color: blanchedalmond;
+}
+
+.switch {
+    position: fixed;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+    right: 80px;
+    top: 17px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: #333;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #117964;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #117964;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/*        THIS SECTION IS FOR MY NAME       */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+
+.my-name {
+    position: fixed;
+    opacity: 50%;
+    z-index: 0;
+    font-size: 50px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.my-name h1 {
+    position: fixed;
+    top: 210px;
+    transform: rotate(90deg);
+    color:blanchedalmond;
+    right: -11%;
+}
+
+.my-name h2 {
+    position: fixed;
+    top: 125px;
+    transform: rotate(90deg);
+    color:blanchedalmond;
+    right: 0%;
+}
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/*      THIS SECTION IS FOR SOCIAL MEDIA    */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+
+#instagram {
+    position: fixed;
+    width: 30px;
+    height: auto;
+    left: 500px;
+    top: 20px;
+    border-radius: 15%;
+}
+
+#linkedin {
+    position: fixed;
+    width: 30px;
+    height: auto;
+    left: 550px;
+    top: 20px;
+    border-radius: 15%;
+}
+
+#leetcode {
+    position: fixed;
+    width: 30px;
+    height: auto;
+    left: 600px;
+    top: 20px;
+    border-radius: 15%;
+}
+
+#facebook {
+    position: fixed;
+    width: 30px;
+    height: auto;
+    left: 650px;
+    top: 20px;
+    border-radius: 15%;
+}
+
+#github {
+    position: fixed;
+    width: 30px;
+    height: auto;
+    left: 700px;
+    top: 20px;  
+    border-radius: 15%;
+}
+
+a {
+    color: rgb(184, 143, 89);
+    text-decoration: underline;
+}
+
+
+
+/*                                          index.html                                          */
+
+
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/*    THIS SECTION IS FOR THE TEXT BOXES    */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+
+.about-me {
+    position: fixed;
+    top: 50px;
+    min-width: min-content;
+    width: 55%;
+    padding-top: 15px;
+    padding-left:70px;
+    padding-right: 70px;
+    height: 300px;
+    margin:30px;
+    margin-right:30px;
+    margin-bottom: 70px;
+    background-color: rgba(255, 235, 205, 0.8);
+    line-height:1.75;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    font-weight: 500;
+    overflow: auto;
+    white-space: normal;
+    z-index: 2;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+  .about-me h1 {
+    margin-bottom: 10px;
+    font-size: large;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+
+  #about-me-cont {
+    position: fixed;
+    min-width: min-content;
+    width: 55%;
+    padding-left:70px;
+    padding-right: 70px;
+    height: 275px;
+    margin:30px;
+    margin-right:30px;
+    margin-bottom: 70px;
+    background-color:rgba(255, 235, 205, 0.8);
+    line-height:2;
+    z-index: 0;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5  );
+    font-weight: 500;
+    overflow: auto;
+    white-space: normal;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    top: 375px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/*      THIS SECTION IS FOR THE IMAGES      */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+
+#autumn {
+    position: fixed;
+    right: 13%;
+    top: 400px;
+    width: 290px;
+    height: auto;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5  );
+}
+
+#profile {
+    position: fixed;
+    right: 13%;
+    top: 80px;
+    width: 290px;
+    height: auto;
+    border-radius: 50%;
+    z-index: 1;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5  );
+}
+
+
+
+/*                                          portfolio.html                                          */
+
+
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/*      THIS SECTION IS FOR PROJECT PICS    */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+
+#attendance-collection {
+    position: fixed;
+    right: 15%;
+    top: 8%;
+    width: 30%;
+}
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/*       THIS SECTION IS FOR TEXT BOXES     */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+
+.attendance {
+    position: fixed;
+    top: 100px;
+    min-width: min-content;
+    width: 625px;
+    padding-left:70px;
+    padding-right: 70px;
+    height: 475px;
+    margin:30px;
+    margin-right:30px;
+    margin-bottom: 70px;
+    background-color:rgba(255, 235, 205, 0.8);
+    line-height:1.8;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5  );
+    font-weight: 500;
+    overflow: auto;
+    white-space: normal;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.attendance-header {
+    font-size: x-large;
+}
+
+.attendance-bullet {
+    font-size: large;
+}
+
+.attendance-text {
+    font-size: large;
+}
+
+
+
+/*                                          qualifications.html                                          */
+
+
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/*      THIS SECTION IS FOR THE RESUME      */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    z-index: 1;
+}
+
+#resume {
+    position: fixed;
+    right: 15%;
+    top: 5%;
+    height: 650px;
+    width: 500px;
+    z-index: 1;
+}
+
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+/*    THIS SECTION IS FOR THE TEXT BOXES    */
+/* ---------------------------------------- */
+/* ---------------------------------------- */
+
+
+.technical-format {
+    position: fixed;
+    top: 100px;
+    min-width: min-content;
+    width: 625px;
+    padding-left:70px;
+    padding-right: 70px;
+    margin:30px;
+    margin-right:30px;
+    margin-bottom: 70px;
+    background-color:rgba(255, 235, 205, 0.8);
+    line-height:1;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5  );
+    font-weight: 500;
+    overflow: auto;
+    white-space: normal;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.tech-header {
+    font-size: x-large;
+}
+
+.tech-bullet {
+    font-size: medium;
+}
+
+.tech-text {
+    font-size: medium;
+}
+
+#tech-skills {
+    height: 275px;
+    left: 0px;
+    top: 7.5%;
+}
+
+#tech-interest {
+    height: 260px;
+    left: 0px;
+    top: 50%;
+}
+
+
+
+/*                                          service.html                                          */
+
+
+
+.past-service {
+    position: fixed;
+    top: 100px;
+    min-width: min-content;
+    width: 650px;
+    height: 256px;
+    padding-left:70px;
+    padding-right: 70px;
+    margin:30px;
+    margin-right:30px;
+    margin-bottom: 70px;
+    background-color:rgba(255, 235, 205, 0.8);
+    line-height: 1.5;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5  );
+    font-weight: 500;
+    overflow: auto;
+    white-space: normal;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.service-goals {
+    position: fixed;
+    top: 380px;
+    left: 467px;
+    min-width: min-content;
+    width: 650px;
+    padding-left:70px;
+    padding-right: 70px;
+    margin:30px;
+    margin-right:30px;
+    margin-bottom: 70px;
+    background-color:rgba(255, 235, 205, 0.8);
+    line-height: 1.5;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5  );
+    font-weight: 500;
+    overflow: auto;
+    white-space: normal;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.past-service-header {
+    font-size: xx-large;
+}
+
+.past-service-text {
+    font-size: large;
+}
+
+.service-goals-header {
+    font-size: xx-large;
+}
+
+.service-goals-text {
+    font-size: large;
+}
+
+#kittyhawk {
+    position: fixed;
+    left: 900px;
+    top: 129px;
+    width: auto;
+    height: 257px;
+}
+
+#veterans {
+    position: fixed;
+    left: 40px;
+    top: 410px;
+    width: auto;
+    height: 271px;
+}
