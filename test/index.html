@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome!</title>
+<meta name="viewport" http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+              <li><a href="/" class="header-text">Home</a></li>
+              <li><a href="/portfolio/" class="header-text">Portfolio</a></li>
+              <li><a href="/qualifications/" class="header-text">Qualifications</a></li>
+              <li><a href="https://www.instagram.com/brenndan.cro03/?hl=en"><img id="instagram" src="../logos/instagram.png"></a></li>
+              <li><a href="https://leetcode.com/brenndancroteau/"><img id="leetcode" src="../logos/leetcode.png"></a></li>
+              <li><a href="https://www.facebook.com/brenndan.croteau/"><img id="facebook" src="../logos/facebook.png"></a></li>
+              <li><a href="https://www.linkedin.com/in/brenndan-croteau/"><img id="linkedin" src="../logos/linkedin.png"></a></li>
+              <li><a href="https://github.com/brenndancroteau"><img id="github" src="../logos/github.png"></a></li>
+            </ul>
+          </div>
+    </nav>
+
+    <div class="name">
+        <div class="first">Brenndan</div>
+        <div class="last">Croteau</div>
+    </div>
+
+    <div class="container">
+        <div class="vertical-text">
+            <span>P</span>
+            <span>r</span>
+            <span>o</span>
+            <span>j</span>
+            <span>e</span>
+            <span>c</span>
+            <span>t</span>
+            <span>s</span>
+        </div>
+    </div>
+
+    <div class="tabs">
+        <div class="tab-2">
+          <label for="tab2-1">Tire Pressure Monitor</label>
+          <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
+          <div>
+            <h4>Tire Pressure Monitor</h4>
+            <ul>
+                <li>Collects and analyzes data from tractors across Labatt's entire fleet</li>
+                <li>Lists tractors based on issues, highlights where the issue is</li>
+                <li>Automatically refreshes every minute to ensure data is relevant and updated</li>
+                <li>Allows for tractor filtering to easily find a specific vehicle</li>
+                <li>Can view up to the last 3 days of data to analyze trends</li>
+            </ul>
+
+            <img id="tpms" src="../images/tirePressureMonitor.png">
+            <img id="vtc" src="../images/vehicleTireHistory.png">
+          </div>
+        </div>
+        <div class="tab-2">
+          <label for="tab2-2">Boba Tea POS</label>
+          <input id="tab2-2" name="tabs-two" type="radio">
+          <div>
+            <h4>Boba Tea POS</h4>
+            <p>Test</p>
+          </div>
+        </div>
+      </div>
+
+  <video autoplay muted loop id="backgroundVideo" type="mp4" style="z-index: -1;">
+    <source id="vidSource" src="../mp4/nature.mp4">
+  </video>
+
+</body>
+
+<style>
+    .vertical-text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: clamp(1rem, 8vw, 8rem);
+        font-weight: bold;
+        line-height: 1;
+        margin: 0;
+        position: absolute;
+        left: 30px;
+        top: 120px;
+    }
+    .vertical-text span {
+        display: block;
+        color: blanchedalmond;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    .header-text {
+        color: blanchedalmond;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 2rem;
+        margin-top: 0.3em;
+    }
+
+    #backgroundVideo {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: -1;
+        }
+
+    #tpms {
+        position: relative;
+        left: 44%;
+        top: -150px;
+        width: 55%;
+        height: auto;
+        z-index: 1;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5  );
+    }
+
+    #vtc {
+        position: relative;
+        left: -55%;
+        top: -70px;
+        width: 40%;
+        height: auto;
+        z-index: 1;
+        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5  );
+    }
+
+    .nav > li > a:focus, 
+    .nav > li > a:hover,
+    .navbar-brand:focus,
+    .navbar-brand:hover {
+        text-decoration: none;
+        background-color: transparent;
+        color: burlywood;
+        transition: color 0.3s ease-in-out;
+    }
+
+    .first {
+        right: 0.05em;
+        top: 150px;
+        position: fixed;
+        font-size: 10rem;
+    }
+    .last {
+            right: 2em;
+            top:3em;
+            position: fixed;
+            font-size: 8rem;
+        }
+    .name {
+        transform: rotate(90deg);
+        color: blanchedalmond;
+        opacity: 50%;
+        z-index: 0;
+        position: fixed;
+        top: 500px;
+        right: -100px;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+
+    @media (max-width: 1300px) {
+        .last {
+            right: -4em;
+            top:2em;
+            position: fixed;
+            font-size: 8rem;
+        }
+    } 
+
+    #instagram {
+    width: 30px;
+    height: auto;
+    border-radius: 15%;
+    }
+    #linkedin {
+        width: 30px;
+        height: auto;
+        border-radius: 15%;
+    }
+    #leetcode {
+        width: 30px;
+        height: auto;
+        border-radius: 15%;
+    }
+    #facebook {
+        width: 30px;
+        height: auto;
+        border-radius: 15%;
+    }
+    #github {
+        width: 30px;
+        height: auto;
+        border-radius: 15%;
+    }
+
+    body {
+        color: blanchedalmond;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        font-size: 16px;
+        font-weight: 300;
+        letter-spacing: 0.01em;
+        line-height: 1.6em;
+        margin: 0;
+        padding: 100px; 
+        width: 75%;
+    }
+    h1 {
+        font-size: 40px;
+        line-height: 0.8em;
+        color: rgba(255,255,255,0.2);
+    }
+    .made-with {
+        background: blanchedalmond;
+        color: blanchedalmond;
+        display: block;
+        font-size: 12px;
+        line-height: 1em;
+        margin: 0;
+        padding: 5px 110px;
+        position: fixed;
+        top: 20px;
+        right: -100px;
+        text-align: center;
+        text-decoration: none;
+        transform: rotate(45deg);
+    }
+    .documentation {
+        color: #fd264f;
+    }
+    button:focus,
+    input:focus,
+    textarea:focus,
+    select:focus {
+        outline: none; 
+    }
+    .tabs {
+        display: block;
+        display: -webkit-flex;
+        display: -moz-flex;
+        display: flex;
+        -webkit-flex-wrap: wrap;
+        -moz-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin: 0;
+        overflow: hidden; 
+        width: 75%;
+        height: 75%;
+        position: absolute;
+        right: 15%;
+        background-color: rgba(156, 98, 62, 0.85);
+        border-radius: 5px;
+    }
+    .tabs [class^="tab"] label,
+    .tabs [class*=" tab"] label {
+        color: blanchedalmond;
+        cursor: pointer;
+        display: block;
+        font-size: 1.1em;
+        font-weight: 300;
+        line-height: 1em;
+        padding: 2rem 0;
+        text-align: center; 
+    }
+    .tabs [class^="tab"] [type="radio"],
+    .tabs [class*=" tab"] [type="radio"] {
+        border-bottom: 1px solid rgba(239, 237, 239, 0.5);
+        cursor: pointer;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        display: block;
+        width: 100%;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; 
+    }
+    .tabs [class^="tab"] [type="radio"]:hover, .tabs [class^="tab"] [type="radio"]:focus,
+    .tabs [class*=" tab"] [type="radio"]:hover,
+    .tabs [class*=" tab"] [type="radio"]:focus {
+        border-bottom: 1px solid blanchedalmond; 
+    }
+    .tabs [class^="tab"] [type="radio"]:checked,
+    .tabs [class*=" tab"] [type="radio"]:checked {
+        border-bottom: 2px solid blanchedalmond; 
+    }
+    .tabs [class^="tab"] [type="radio"]:checked + div,
+    .tabs [class*=" tab"] [type="radio"]:checked + div {
+        opacity: 1; 
+    }
+    .tabs [class^="tab"] [type="radio"] + div,
+    .tabs [class*=" tab"] [type="radio"] + div {
+        display: block;
+        opacity: 0;
+        padding: 2rem 20px;
+        width: 90%;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        -o-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out; 
+    }
+    .tabs .tab-2 {
+        width: 50%; 
+    }
+    .tabs .tab-2 [type="radio"] + div {
+        width: 200%;
+        margin-left: 200%; 
+    }
+    .tabs .tab-2 [type="radio"]:checked + div {
+        margin-left: 0; 
+    }
+    .tabs .tab-2:last-child [type="radio"] + div {
+        margin-left: 100%; 
+    }
+    .tabs .tab-2:last-child [type="radio"]:checked + div {
+        margin-left: -100%; 
+    }
+</style>
+
+</html>
