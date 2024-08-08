@@ -46,7 +46,7 @@
     <div class="tabs">
         <div class="tab-2">
           <label for="tab2-1">Tire Pressure Monitor</label>
-          <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
+          <input id="tab2-1" name="tabs-two" type="radio">
           <div class="content">
             <h4>Tire Pressure Monitor</h4>
             <ul>
@@ -57,17 +57,28 @@
                 <li>Can view up to the last 3 days of data to analyze trends</li>
             </ul>
             <div class="images">
-                <img id="tpms" src="../images/tirePressureMonitor.png">
-                <img id="vtc" src="../images/vehicleTireHistory.png">
+                <img class="image" src="../images/tirePressureMonitor.png">
+                <img class="image" src="../images/vehicleTireHistory.png">
             </div>
           </div>
         </div>
         <div class="tab-2">
           <label for="tab2-2">Boba Tea POS</label>
-          <input id="tab2-2" name="tabs-two" type="radio">
-          <div>
+          <input id="tab2-2" name="tabs-two" type="radio" checked="checked">
+          <div class="content">
             <h4>Boba Tea POS</h4>
-            <p>Test</p>
+            <ul>
+                <li>Video presentation of both the process and application <a href="https://www.youtube.com/watch?v=F2yRchpN074">here</a></li>
+                <li>Recreates both the customer and staff experience of a POS UI</li>
+                <li>Ingredient inventory levels managed automatically via an API for a postgreSQL database</li>
+                <li>Tracks orders to view trends in sales</li>
+                <li>Allows for translation of website into Spanish</li>
+            </ul>
+            <div class="images">
+                <img class="image" src="../images/home.png">
+                <img class="image" src="../images/menu.png">
+                <img class="image" src="../images/cashier.png">
+            </div>
           </div>
         </div>
       </div>
@@ -143,36 +154,31 @@
     }
 
     .content {
-        display: flex;
         flex-wrap: wrap;
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        box-sizing: border-box;
         color: blanchedalmond;
         font-family: Georgia, 'Times New Roman', Times, serif;
         line-height: 1.6em;
         height: 100%;
-        overflow-y: auto;
-        position: relative;
-        padding: 1em;
     }
     .content h4 {
-        font-size: 20px;
+        font-size: 24px;
         font-weight: 600;
     }
     .content li {
-        font-size: 16px;
+        font-size: 20px;
         font-weight: 0;
+        margin-bottom: 10px;
     }
-    .content #tpms {
-        width: 75%;
-        height: auto;
-        z-index: 1;
-        box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5  );
-        margin-bottom: 1em;
+    .content li a {
+        color: blanchedalmond;
+        text-decoration: underline;
+        font-weight: 600;
+        font-style: italic;
     }
-    .content #vtc {
+    .content .images .image {
         width: 75%;
         height: auto;
         z-index: 1;
