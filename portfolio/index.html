@@ -2,60 +2,112 @@
 <html>
 <head>
 <title>Welcome!</title>
-<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
-<link id="styles" rel="stylesheet" href="../styles/styleNature.css">
+<meta name="viewport" http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<link id="styles" rel="stylesheet" href="../styles/portfolio.css">
 </head>
 
 <body>
 
-  <div class="my-name">
-    <h1>Brenndan</h1>
-    <h2>Croteau</h2>
-  </div>
-
-  <div class="attendance">
-    <h1 class="attendance-header">Attendance Collection</h1>
-    <p class="attendance-text">
-      This project was the first application I developed. It is given a file of attendance logs, and will return the names of students 
-      along with any relevant information asked for. Features include but are not limited to:
-      <li class="attendance-bullet">List of late students</li>
-      <li class="attendance-bullet">Attendance for a specific student</li>
-      <li class="attendance-bullet">List of students absent</li>
-      <li class="attendance-bullet">List of all student entry times</li>
-    </p>
-    <p class="attendance-text">
-      For the application to work, the text file provided has to be within a certain format. Should the file deviate from this format, the 
-      application will fail to work. <a href="https://www.youtube.com/watch?v=NLGMzMnmcXk">Here is a video</a> that demonstrates the capabilities
-      of the application as well as how to use it.
-    </p>
-  </div>
-
-  <img id="attendance-collection" src="../images/attendanceCollection.png">
-
-  <label class="hamburger-menu">
-    <input type="checkbox">
-  </label>
-
-  <aside class="sidebar">
-    <nav>
-      <ul class="menu-items">
-        <li><a href="/" class="btn">Home</a></li>
-        <li><a href="/portfolio/" class="btn">Portfolio</a></li>
-        <li><a href="/qualifications/" class="btn">Qualifications</a></li>
-      </ul>
+    <nav class="navbar navbar-fixed-top">
+        <div class="container-fluid">
+            <ul class="nav navbar-nav">
+              <li><a href="/" class="header-text">Home</a></li>
+              <li><a href="/portfolio/" class="header-text">Portfolio</a></li>
+              <li><a href="/qualifications/" class="header-text">Qualifications</a></li>
+              <li><a href="https://www.instagram.com/brenndan.cro03/?hl=en"><img class="header-logo" src="../logos/instagram.png"></a></li>
+              <li><a href="https://leetcode.com/brenndancroteau/"><img class="header-logo" src="../logos/leetcode.png"></a></li>
+              <li><a href="https://www.facebook.com/brenndan.croteau"><img class="header-logo" src="../logos/facebook.png"></a></li>
+              <li><a href="https://www.linkedin.com/in/brenndan-croteau/"><img class="header-logo" src="../logos/linkedin.png"></a></li>
+              <li><a href="https://github.com/brenndancroteau"><img class="header-logo" src="../logos/github.png"></a></li>
+            </ul>
+          </div>
     </nav>
 
-    <nav>
-      <a href="https://www.instagram.com/brenndan.cro03/?hl=en"><img id="instagram" src="../logos/instagram.png"></a>
-      <a href="https://leetcode.com/brenndancroteau/"><img id="leetcode" src="../logos/leetcode.png"></a>
-      <a href="https://www.facebook.com/brenndan.croteau/"><img id="facebook" src="../logos/facebook.png"></a>
-      <a href="https://www.linkedin.com/in/brenndan-croteau/"><img id="linkedin" src="../logos/linkedin.png"></a>
-      <a href="https://github.com/brenndancroteau"><img id="github" src="../logos/github.png"></a>
-    </nav>
+    <div class="name">
+        <div class="first">Brenndan</div>
+        <div class="last">Croteau</div>
+    </div>
 
-  </aside>
+    <div class="container">
+        <div class="vertical-text">
+            <span>P</span>
+            <span>r</span>
+            <span>o</span>
+            <span>j</span>
+            <span>e</span>
+            <span>c</span>
+            <span>t</span>
+            <span>s</span>
+        </div>
+    </div>
 
-  <video autoplay muted loop id="backgroundVideo" type="mp4">
+    <div class="tabs">
+
+        <div class="tab-2">
+          <label for="tab2-1">Tire Pressure Monitor</label>
+          <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
+          <div class="content">
+            <h4>Tire Pressure Monitor</h4>
+            <ul>
+                <li>Collects and analyzes data from tractors across Labatt's entire fleet</li>
+                <li>Lists tractors based on issues, highlights where the issue is</li>
+                <li>Automatically refreshes every minute to ensure data is relevant and updated</li>
+                <li>Allows for tractor filtering to easily find a specific vehicle</li>
+                <li>Can view up to the last 3 days of data to analyze trends</li>
+            </ul>
+            <div class="images">
+                <img class="image" src="../images/tirePressureMonitor.png">
+                <img class="image" src="../images/vehicleTireHistory.png">
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-2">
+          <label for="tab2-2">Boba Tea POS</label>
+          <input id="tab2-2" name="tabs-two" type="radio">
+          <div class="content" id="boba">
+            <h4>Boba Tea POS</h4>
+            <ul>
+                <li>Video presentation of both the process and application <a href="https://www.youtube.com/watch?v=F2yRchpN074">here</a></li>
+                <li>Recreates both the customer and staff experience of a POS UI</li>
+                <li>Ingredient inventory levels managed automatically via an API for a postgreSQL database</li>
+                <li>Tracks orders to view trends in sales</li>
+                <li>Allows for translation of website into Spanish</li>
+            </ul>
+            <div class="images">
+                <img class="image" src="../images/home.png">
+                <img class="image" src="../images/menu.png">
+                <img class="image" src="../images/cashier.png">
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-2" id="boba">
+            <label for="tab2-3">Attendance Collector</label>
+            <input id="tab2-3" name="tabs-two" type="radio">
+            <div class="content">
+              <h4>Attendance Collector</h4>
+              <ul>
+                  <li>Video presentation of both the application <a href="https://youtu.be/NLGMzMnmcXk">here</a></li>
+                  <li>Performs a number of multiple actions based attendance information including but are not limited to:</li>
+                  <ul>
+                    <li>Displaying roster information</li>
+                    <li>List of tardy or absent students</li>
+                    <li>Information for a specific students attendance</li>
+                  </ul>
+              </ul>
+              <div class="images">
+                  <img class="image" id="attendance" src="../images/attendanceCollection.png">
+              </div>
+            </div>
+          </div>
+          
+      </div>
+
+  <video autoplay muted loop id="backgroundVideo" type="mp4" style="z-index: -1;">
     <source id="vidSource" src="../mp4/nature.mp4">
   </video>
 
