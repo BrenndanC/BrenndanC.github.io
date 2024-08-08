@@ -46,7 +46,7 @@
     <div class="tabs">
         <div class="tab-2">
           <label for="tab2-1">Tire Pressure Monitor</label>
-          <input id="tab2-1" name="tabs-two" type="radio">
+          <input id="tab2-1" name="tabs-two" type="radio" checked="checked">
           <div class="content">
             <h4>Tire Pressure Monitor</h4>
             <ul>
@@ -64,8 +64,8 @@
         </div>
         <div class="tab-2">
           <label for="tab2-2">Boba Tea POS</label>
-          <input id="tab2-2" name="tabs-two" type="radio" checked="checked">
-          <div class="content">
+          <input id="tab2-2" name="tabs-two" type="radio">
+          <div class="content" id="boba">
             <h4>Boba Tea POS</h4>
             <ul>
                 <li>Video presentation of both the process and application <a href="https://www.youtube.com/watch?v=F2yRchpN074">here</a></li>
@@ -81,6 +81,25 @@
             </div>
           </div>
         </div>
+        <div class="tab-2" id="boba">
+            <label for="tab2-3">Attendance Collector</label>
+            <input id="tab2-3" name="tabs-two" type="radio" checked="checked">
+            <div class="content">
+              <h4>Attendance Collector</h4>
+              <ul>
+                  <li>Video presentation of both the application <a href="https://youtu.be/NLGMzMnmcXk">here</a></li>
+                  <li>Performs a number of multiple actions based attendance information including but are not limited to:</li>
+                  <ul>
+                    <li>Displaying roster information</li>
+                    <li>List of tardy or absent students</li>
+                    <li>Information for a specific students attendance</li>
+                  </ul>
+              </ul>
+              <div class="images">
+                  <img class="image" id="attendance" src="../images/attendanceCollection.png">
+              </div>
+            </div>
+          </div>
       </div>
 
   <video autoplay muted loop id="backgroundVideo" type="mp4" style="z-index: -1;">
@@ -178,6 +197,9 @@
         font-weight: 600;
         font-style: italic;
     }
+    .content .images {
+        text-align: center;
+    }
     .content .images .image {
         width: 75%;
         height: auto;
@@ -185,8 +207,8 @@
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5  );
         margin-bottom: 1em;
     }
-    .content .images {
-        text-align: center;
+    #attendance {
+        width: 50%;
     }
 
     @media (max-width: 1300px) {
@@ -279,7 +301,6 @@
         display: block;
         opacity: 0;
         padding: 2rem 20px;
-        width: 90%;
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         -o-transition: all 0.3s ease-in-out;
@@ -288,7 +309,7 @@
         z-index: 1;
     }
     .tabs .tab-2 {
-        width: 50%; 
+        flex: 1 1 33%; 
         display: flex;
         flex-direction: column;
         height: 100%;
@@ -300,17 +321,23 @@
         padding: 2rem;
     }
     .tabs .tab-2 [type="radio"] + div {
-        width: 200%;
-        margin-left: 200%; 
+        width: 300%;
+        margin-left: 300%; 
     }
     .tabs .tab-2 [type="radio"]:checked + div {
         margin-left: 0; 
     }
     .tabs .tab-2:last-child [type="radio"] + div {
-        margin-left: 100%; 
+        margin-left: 200%; 
     }
     .tabs .tab-2:last-child [type="radio"]:checked + div {
-        margin-left: -100%; 
+        margin-left: -200%; 
+    }
+    .tabs .tab-2:nth-child(2) [type="radio"] + div {
+        margin-left: 200%; 
+    }
+    .tabs .tab-2:nth-child(2) [type="radio"]:checked + div {
+        margin-left: -100%;
     }
 </style>
 
