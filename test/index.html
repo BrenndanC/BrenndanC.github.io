@@ -56,9 +56,10 @@
                 <li>Allows for tractor filtering to easily find a specific vehicle</li>
                 <li>Can view up to the last 3 days of data to analyze trends</li>
             </ul>
-
-            <img id="tpms" src="../images/tirePressureMonitor.png">
-            <img id="vtc" src="../images/vehicleTireHistory.png">
+            <div class="images">
+                <img id="tpms" src="../images/tirePressureMonitor.png">
+                <img id="vtc" src="../images/vehicleTireHistory.png">
+            </div>
           </div>
         </div>
         <div class="tab-2">
@@ -178,6 +179,9 @@
         box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5  );
         margin-bottom: 1em;
     }
+    .content .images {
+        text-align: center;
+    }
 
     @media (max-width: 1300px) {
         .last {
@@ -223,7 +227,7 @@
         top: 10rem;
         background-color: rgba(114, 74, 48, 0.85);
         border-radius: 5px;
-        margin: 10px
+        margin: 10px;
     }
     .tabs [class^="tab"] label,
     .tabs [class*=" tab"] label {
