@@ -1,0 +1,11 @@
+.header-text {
+    color: blanchedalmond;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    margin-top: 0.3em;
+}
+.header-logo {
+    width: 40px;
+    height: auto;
+    border-radius: 15%;
+}

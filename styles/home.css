@@ -16,30 +16,8 @@
     text-decoration: none;
     background-color: transparent;
     color: burlywood;
+    opacity: 85%;
     transition: color 0.3s ease-in-out;
-}
-
-.first {
-    right: -0.35em;
-    top: 1em;
-    position: fixed;
-    font-size: 10rem;
-}
-.last {
-    right: 1.5em;
-    top: 2.5em;
-    position: fixed;
-    font-size: 8rem;
-}
-.name {
-    transform: rotate(90deg);
-    color: blanchedalmond;
-    opacity: 50%;
-    z-index: 0;
-    position: fixed;
-    top: 500px;
-    right: -100px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 #backgroundVideo {
@@ -52,83 +30,20 @@
     z-index: -1;
 }
 
-.about-me {
-    position: fixed;
-    top: 50px;
-    min-width: min-content;
-    width: 55%;
-    padding-top: 15px;
-    padding-left:70px;
-    padding-right: 70px;
-    height: 300px;
-    margin:30px;
-    margin-right:30px;
-    margin-bottom: 70px;
-    background-color: rgba(114, 74, 48, 0.85);
-    line-height:1.75;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
-    font-weight: 500;
-    overflow: auto;
-    white-space: normal;
-    z-index: 2;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    color: blanchedalmond;
+.first {
+    font-size: 10rem;
 }
-.about-me h1 {
-    margin-bottom: 10px;
-    font-size: large;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+.title {
+    font-size: 5rem;
 }
-#about-me-cont {
-    position: fixed;
-    min-width: min-content;
-    width: 55%;
-    padding-left:70px;
-    padding-right: 70px;
-    height: 275px;
-    margin:30px;
-    margin-right:30px;
-    margin-bottom: 70px;
-    background-color:rgba(114, 74, 48, 0.85);
-    line-height:2;
-    z-index: 0;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5  );
-    font-weight: 500;
-    overflow: auto;
-    white-space: normal;
+.name {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 2;
-    top: 375px;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    flex-direction: column;
+    height: 50vh;
     color: blanchedalmond;
-}
-
-#autumn {
-    position: fixed;
-    right: 13%;
-    top: 400px;
-    width: 290px;
-    height: auto;
-    border-radius: 50%;
-    z-index: 1;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5  );
-}
-#profile {
-    position: fixed;
-    right: 13%;
-    top: 80px;
-    width: 290px;
-    height: auto;
-    border-radius: 50%;
-    z-index: 1;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5  );
-}
-
-@media (max-width: 1300px) {
-    .last {
-        right: -4em;
-        top: 1.52em;
-    }
+    z-index: 0;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    opacity: 70%;
 }
