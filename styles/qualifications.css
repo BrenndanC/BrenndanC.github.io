@@ -57,7 +57,7 @@
     position: fixed;
     width: 30%;
     padding-bottom: 39%;
-    right: 30rem;
+    right: 20rem;
     top: 10rem;
 }
   
@@ -69,3 +69,68 @@
     height: 100%;
     border: 0;
 }
+
+.content-container {
+    position: fixed;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: blanchedalmond;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    background-color: rgba(114, 74, 48, 0.85);
+    width: 45%;
+    padding-left: 3em;
+    padding-right: 2.25em;
+    overflow: hidden;
+    line-height: 1em;
+}
+.content-container#esports {
+    top: 10rem;
+    left: 10rem;
+}
+.content-container#internship {
+    top: 40rem;
+    left: 10rem;
+}
+.content-container#close {
+    padding-top: 1.5em;
+    top: 62.5rem;
+    left: 10rem;
+}
+.content-container h3 {
+    padding-top: 0.5em;
+    font-weight: 600;
+}
+.content-container h4 {
+    font-style: italic;
+    padding-bottom: 1em;
+}
+.content-container p {
+    font-weight: 300;
+    line-height: 1.6em;
+    font-size: 14px;
+}
+.content-container li {
+    font-size: 14px;
+    padding-bottom: 1em;
+}
+.content-container .content-close {
+    padding-bottom: 1em;;
+}
+
+@media (max-width: 1300px) {
+    .last {
+        right: -4em;
+        top: 1.52em;
+    }
+    .content-container {
+        width: 75%;
+    }
+    .resume-container {
+        position: fixed;
+        width: 50%;
+        padding-bottom: 64%;
+        top: 80rem;
+        left: 50%;
+        transform: translate(-50%);
+    }
+} 
