@@ -53,8 +53,19 @@
     z-index: -1;
 }
 
+.main-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 2rem;
+    position: relative;
+    box-sizing: border-box;
+}
+
 .resume-container {
-    position: fixed;
+    position: absolute;
     width: 30%;
     padding-bottom: 39%;
     right: 20rem;
@@ -71,7 +82,7 @@
 }
 
 .content-container {
-    position: fixed;
+    position: absolute;
     flex-wrap: wrap;
     flex-direction: column;
     color: blanchedalmond;
@@ -83,17 +94,17 @@
     overflow: hidden;
     line-height: 1em;
 }
-.content-container#esports {
+.content-container#internship {
     top: 10rem;
     left: 10rem;
 }
-.content-container#internship {
-    top: 40rem;
+.content-container#esports {
+    top: 37.5rem;
     left: 10rem;
 }
 .content-container#close {
     padding-top: 1.5em;
-    top: 62.5rem;
+    top: 68rem;
     left: 10rem;
 }
 .content-container h3 {
@@ -126,10 +137,9 @@
         width: 75%;
     }
     .resume-container {
-        position: fixed;
         width: 50%;
         padding-bottom: 64%;
-        top: 80rem;
+        top: 85rem;
         left: 50%;
         transform: translate(-50%);
     }
